@@ -1,0 +1,65 @@
+/*CSS de la page de selection dans biographie*/
+
+.maison_gryffondor, .maison_serdaigle
+{
+	/*Position*/
+	height:300px;
+	width:50%;
+	float:left;
+	vertical-align:center;
+	line-height:350px;
+	/*Style*/
+	text-align:center;
+	background-color:white;
+	transition: transform 0.5s, opacity 1s, background 1s;
+}
+.maison_gryffondor:hover
+{
+	transform:scale(0.9);
+	border-radius:15px;
+	background-color:red;
+	box-shadow: rgb(100, 100, 100) 0px -20px 80px inset;
+
+}
+.maison_serdaigle:hover
+{
+	transform:scale(0.9);
+	border-radius:15px;
+	background-color:blue;
+	box-shadow: rgb(100, 100, 100) 0px -20px 80px inset;
+
+}
+
+.maison_serpentard, .maison_poufsouffle
+{
+	/*Position*/
+	height:300px;
+	width:50%;
+	vertical-align:center;
+	line-height:350px;
+	margin-left:50%;
+	/*Style*/
+	text-align:center;
+	background-color:white;
+	transition: transform 0.5s, opacity 1s, background 1s;
+
+}
+.maison_serpentard:hover
+{
+	transform:scale(0.9);
+	border-radius:15px;
+	background-color:green;
+	box-shadow: rgb(100, 100, 100) 0px -20px 80px inset;
+}
+.maison_poufsouffle:hover
+{
+	transform:scale(0.9);
+	border-radius:15px;
+	background-color:yellow;
+	box-shadow: rgb(100, 100, 100) 0px -20px 80px inset;
+}
+
+
+
+
+

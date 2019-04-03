@@ -1,0 +1,248 @@
+/*CSS Personnalisé*/
+
+/*Mise en page global*/
+body {
+	background-color:rgb(30, 30, 30);
+	font-size: 22px;
+}
+
+section {
+
+	/*Position*/
+	margin-top:20px;
+	/*Style*/
+	border-top:solid 3px gray;
+	border-bottom:solid 3px gray;
+}
+
+section:nth-child(even) {
+	background-color:white;
+}
+
+section:nth-child(odd) {
+	background-color:#003050;
+	color:white;
+}
+
+section:nth-child(7) {
+	min-height:400px;
+	background-color:white;
+	color:black;
+}
+
+/*Bar de navigation*/
+.navbar {
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index:500;
+}
+
+nav a img /*Logo*/
+{
+	max-width:40px;
+}
+
+
+/*Jumbotron title*/
+.display-3 {
+	color:black;
+}
+
+/*Titre Harry Potter section*/
+h1 {
+
+	/*Position*/
+	text-align: center;
+	vertical-align: center;
+	line-height: 750px;
+	/*Style*/
+	color:white;
+	font-size:44px;
+}
+
+/*Grid des sections films/produits */
+.row {
+
+	/*Position*/
+	margin: 120px 60px;
+	text-align:center;
+	min-height:650px;
+	/*Style*/
+	border: solid 6px rgb(250, 250, 250);
+	border-radius: 10px;
+	box-shadow: lightgray 0px 0px 40px;
+	
+
+}
+
+/*Articles Carousel slides*/
+#carouselExampleIndicators {
+	width:100%;
+}
+
+
+/*Section des produits*/
+.produit {
+	display: flex;
+	align-items: center;
+}
+.produitDescription {
+	font-size:20px;
+	color:rgb(120, 120, 120);
+}
+
+/*Section des personnages*/
+.card {
+	
+	/*Position*/
+	float:left;
+	margin:16px;
+	margin-left: 3%;
+	width: 28%;
+	min-height: 400px;
+	/*Style*/
+	color:black;
+	box-shadow: rgb(170, 170, 170) 0px 0px 10px;
+}	
+
+/*Section des films*/
+.div_affiche
+{
+	max-width:300px;
+	margin-top:60px;
+}
+.imageFilm {
+	float:left;
+}
+
+/*Section des achats*/
+.tableau {
+	padding:20px 0px;
+	width:100%;
+}
+
+
+/*Formulaire*/
+.formulaire {
+	text-align:center;
+}
+
+.contact { /*Titre section*/
+	margin-top:20px;
+	font-size:35px;
+}
+
+.formulaire div { /*Eléments formulaire*/
+	margin-top:20px;
+}
+
+.choix { /*select*/
+	margin-top:40px;
+}
+
+textarea { /*Message*/
+	resize:none;
+}
+
+.envoyer { /*Bouton*/
+	margin-bottom:20px;
+}
+
+
+/*Footer*/
+footer {
+
+	/*Position*/
+	height:200px;
+	text-align:center;
+	padding-top:80px;
+	/*Style*/
+	font-size:20px;
+	color:white;
+}
+
+
+/*Redimensionnement des produits/cartes personnages/texte.
+Diminution du padding des sections*/
+
+@media (max-width: 1200px) {
+
+	#imageProduit {
+		max-height:250px;
+		width:auto;
+	}
+
+}
+
+@media (max-width: 768px)
+{
+	#imageProduit {
+
+		max-height:140px;
+		width:auto;
+	}
+
+	.card {
+
+		/*Position*/
+		min-height:150px;
+		margin-left: 3%; 
+		margin:5px;
+		/*Style*/
+		font-size: 12px;
+
+	}	
+
+	h4 {
+		font-size: 14px;
+	}
+
+	.div_affiche {
+		margin-left:0px;
+	}
+	
+	.synopsis .titre {
+		font-size:18px;
+	}
+
+	.synopsis .paragraphe {
+		font-size:15px;
+	}
+
+	.row {
+		margin:20px 0px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 450px)
+{
+	.more { /*N'affiche qu'une carte sur trois*/
+		display:none;
+	}
+	.card {
+		width: 100%;
+	}
+
+	.list-group-item, .paragraphe, .titre {
+		font-size:12px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

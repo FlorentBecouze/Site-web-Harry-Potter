@@ -1,0 +1,227 @@
+/*CSS Pour toutes les pages de biographies des quatres maisons*/
+
+body 
+{
+ 	display:box;
+ 	width: 100%;
+}
+
+
+.tableau_gryffondor
+{
+	/*Position*/
+	margin-right:15%;
+	margin-left:15%;
+	margin-top: 20px;
+	/*Style*/
+	box-shadow: rgb(150, 0, 0) 0px 0px 40px;
+}
+
+.tableau_serpentard
+{
+	/*Position*/
+	margin-right:15%;
+	margin-left:15%;
+	margin-top: 20px;
+	/*Style*/
+	box-shadow: rgb(0, 150, 0) 0px 0px 40px;
+}
+
+.tableau_serdaigle
+{
+	/*Position*/
+	margin-right:15%;
+	margin-left:15%;
+	margin-top: 20px;
+	/*Style*/
+	box-shadow: rgb(0, 0, 150) 0px 0px 40px;
+}
+
+.tableau_poufsouffle
+{
+	/*Position*/
+	margin-right:15%;
+	margin-left:15%;
+	margin-top: 20px;
+	/*Style*/
+	box-shadow: rgb(150, 150, 0) 0px 0px 40px;
+}
+
+
+
+
+table
+{
+	/*Style*/
+	background:rgb(50, 50, 50);
+	text-align:center;
+	border-collapse:collapse;
+}
+
+
+
+.entete_gryffondor
+{
+	/*Position*/
+	padding:0;
+	margin:0;
+	height:50px;
+	/*Style*/
+	color:white;
+	font:bold 22px Arial;
+	background: linear-gradient(to bottom, red, rgb(150, 0, 0));
+}
+
+.entete_serpentard
+{
+	/*Position*/
+	padding:0;
+	margin:0;
+	height:50px;
+	/*Style*/
+	color:white;
+	font:bold 22px Arial;
+	background: linear-gradient(to bottom, green, rgb(0, 150, 0));
+}
+
+.entete_serdaigle
+{
+	/*Position*/
+	padding:0;
+	margin:0;
+	height:50px;
+	/*Style*/
+	color:white;
+	font:bold 22px Arial;
+	background: linear-gradient(to bottom, blue, rgb(0, 0, 150));
+}
+
+.entete_poufsouffle
+{
+	/*Position*/
+	padding:0;
+	margin:0;
+	height:50px;
+	/*Style*/
+	color:white;
+	font:bold 22px Arial;
+	background: linear-gradient(to bottom, yellow, rgb(150, 150, 0));
+}
+
+
+
+td
+{
+	/*Position*/
+	height: 500px;
+	padding:10px;
+	/*Style*/
+	border-bottom: solid 3px rgb(70, 70, 70);
+
+}
+
+
+/*Intérieur des cellules*/
+
+/*Photos*/
+.portrait
+{
+	width:200px;
+	margin-left:auto;
+}
+
+/*Nom*/
+.nom {
+	color:white;
+	font: bold 18px Tahoma;
+	margin: 20px 30%;
+	padding: 15px;
+	background-color: rgb(100, 100, 100);
+	border-radius: 60px;
+}
+
+/*Parents*/
+.parent {
+	text-align: left;;
+	color:white;
+	font: normal 16px Tahoma;
+	margin: 20px 10%;
+	padding: 20px;
+	background-color: rgb(100, 100, 100);
+	border-radius: 60px;
+}
+
+/*Biographie*/
+.description {
+	text-align: left;
+	color:white;
+	font: normal 14px Tahoma;
+	margin: 20px 10%;
+	padding: 20px;
+	background-color: rgb(100, 100, 100);
+	border-radius: 30px;
+}
+
+
+/*Pour écran de moins de 800px de largeur*/
+@media screen and (max-width: 800px) {
+	
+	.tableau_gryffondor {
+		margin:0;
+	}
+	.tableau_serpentard {
+		margin:0;
+	}
+	.tableau_poufsouffle{
+		margin:0;
+	}
+	.tableau_serdaigle {
+		margin:0;
+	}
+	.description {
+		margin: 10px 0px;
+		font-size: 10px;
+	}
+	.nom {
+		margin: 10px 0px;
+		font-size: 11px;
+	}
+	.parent {
+		margin:10px 0px;
+		font-size: 11px;
+	}
+
+	
+}
+
+
+/*Pour impression*/
+@media print {
+
+	header, nav, footer {
+		display: none;
+	}
+
+	.tableau_gryffondor {
+		margin:0;
+		box-shadow: rgba(1, 1, 1, 0) 0px 0px 0px;
+	}
+	.tableau_serpentard {
+		margin:0;
+		box-shadow: rgba(1, 1, 1, 0) 0px 0px 0px;
+	}
+	.tableau_poufsouffle{
+		margin:0;
+		box-shadow: rgba(1, 1, 1, 0) 0px 0px 0px;
+	}
+	.tableau_serdaigle {
+		margin:0;
+		box-shadow: rgba(1, 1, 1, 0) 0px 0px 0px;
+	}
+
+
+
+}
+
+
+

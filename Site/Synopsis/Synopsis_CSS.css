@@ -1,0 +1,45 @@
+/*CSS de la page synopsis*/
+
+#main_content {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+section {
+
+	display:flex;
+	max-width: 600px;
+	margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+
+
+.resume {
+	/*Position*/
+	position:absolute;
+	width: 600px;
+	height: 310px;
+	z-index: 500;
+	/*Style*/
+	font:normal 15px Tahoma;
+	background-color: white;
+	flex: 1;
+	text-align: left;
+	transition: opacity 0.7s;
+}
+
+.resume:hover {
+	opacity: 0;
+}
+
+
+
+
+
+

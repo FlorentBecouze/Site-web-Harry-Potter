@@ -1,0 +1,168 @@
+/*CSS pour la page d'accueil (article)*/
+
+/*Menu Fixe*/
+#reseau
+{
+	/*Position*/
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	height: 60px;
+	width: 200px;
+	padding: 5px;
+	z-index: 500;
+	/*Style*/
+	background-color: #654321;
+	border-radius: 15px 15px 0px 0px;
+	box-shadow: black 0px 0px 20px;
+	transition: height 0.5s;
+	text-align: center;
+	color:white;
+
+
+}
+
+#reseau:hover {
+	height: 70px;
+}
+
+/*Contenu Principal*/
+#main_content
+{
+	display:flex;
+	flex-direction: row-reverse;
+	padding-top: 10px;
+}
+
+.titre_section {
+
+	/*Position*/
+	height: 50px;
+	padding-top: 20px;
+	/*Style*/
+	background-color: rgb(60, 60, 60);
+	color: white;
+	text-align: center;
+	font:normal 20px Tahoma,Arial;
+}
+
+.section1 {
+	display:flex;
+	flex-direction:column;
+	flex:1;
+}
+
+.section2 {
+	justify-content: left;
+	display:flex;
+	flex-direction:column;
+	flex:1;
+}
+
+/*Les différents articles*/
+.news
+{
+	/*Position*/
+	padding: 20px;
+	min-height: 250px;
+	margin-left:5px;
+	margin-bottom: 5px;
+	/*Style*/
+	background-color: white;
+	text-align:center;
+	font:normal 15px Tahoma;
+	transition: box-shadow 0.2s;
+}
+
+.news:hover
+{
+	box-shadow: rgb(130, 130, 130) 0px -30px 60px inset;
+}
+
+.news a
+{
+	/*Position*/
+	padding-top: 50px;
+	margin-top:0px;
+	/*Style*/
+	color:blue;
+	text-decoration: underline;
+	
+}
+
+
+aside
+{
+	/*Position*/
+	height: 655px;
+	width: 20%;
+	/*Style*/
+	background: linear-gradient(to top, rgb(40, 40, 40), gray);
+	font-family: Tahoma;
+	font-size: 16px;
+	color: white;
+	box-shadow: rgb(150, 150, 150) 0px 3px 20px;
+	border-radius:0px 20px 20px 0px;
+	border-left:solid 3px white;
+
+}
+
+aside li {
+	margin-top: 20px;
+
+}
+
+aside li:hover
+{
+	font:bold 16px Tahoma;
+}
+
+aside li a {
+	color:white;
+}
+
+
+
+
+/*CSS appliqué pour une taille d'écran inférieur à 800px*/
+
+@media screen and (max-width: 1000px)
+{
+	#main_content
+	{
+		flex-direction:column-reverse;
+	}
+
+	aside
+	{
+		/*Position*/
+		height:400px;
+		width:100%;
+		/*Style*/
+		border-radius:0px;
+		font: normal 24px Tahoma; 
+	}
+	aside li
+	{
+		margin:50px 0px 0px 42%;
+		
+	}
+
+	aside li:hover
+	{
+		font: bold 24px Tahoma;
+	}
+}
+
+h1
+{
+	color: white;
+	font-size: 30px;
+}
+
+
+
+
+
+
+

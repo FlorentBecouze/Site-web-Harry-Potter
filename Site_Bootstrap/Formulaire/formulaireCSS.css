@@ -1,0 +1,32 @@
+/*CSS personnalisé du formulaire*/
+
+.resultat {
+
+	/*Position*/
+	margin:0px auto;
+	margin-top:100px;
+	max-width:800px;
+	text-align:center;
+	/*Style*/
+	background:white;
+	border-radius:10px;
+	box-shadow: white 0px 0px 20px;
+}
+
+footer {
+
+	/*Position*/
+	position:absolute;
+	bottom: 0px;
+	width:100%;
+	padding-top:80px;
+	margin-top:20px;
+	/*Style*/
+	font-size:20px;
+	border-top:solid 3px gray;
+}
+
+.retour {
+	text-align:center;
+	margin-top:20px;
+}

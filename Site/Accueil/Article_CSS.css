@@ -1,0 +1,71 @@
+/*Les Articles*/
+section 
+{
+	/*Position*/
+	margin-top: 40px;
+	margin-left: 20%;
+	margin-right:20%;
+	padding: 20px;
+	/*Style*/
+	background-color: white;
+	font:normal 18px Tahoma, Arial;
+}
+
+/*Titre articles*/
+section h2
+{
+	font-size: 30px;
+	text-align: center;
+	margin:40px;
+}
+
+/*Première lettre des articles*/
+p::first-letter {
+	font:bold 30px Tahoma, Arial;
+	color:darkgray;
+}
+
+/*Les images des articles*/
+.image {
+	padding: 20px auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

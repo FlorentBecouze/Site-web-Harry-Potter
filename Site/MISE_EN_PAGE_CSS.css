@@ -1,0 +1,171 @@
+/*CSS commun à toutes les pages*/
+* {
+	margin: 0;
+	cursor: url(Photos/MISE_EN_PAGE/curseur1.png), pointer;
+}
+
+body {
+	background-color: #000000;
+	margin:0;
+}
+
+header {
+	/*Position*/
+	text-align: left;
+	padding-left: 15px;: 
+	/*Style*/
+	font-size: 25px;
+	display:block;
+	color: white;
+	background: linear-gradient(to bottom,#2b1d0e, #654321);
+	border-bottom:solid 2px white;
+	border-color:rgb(200, 200, 200);
+	text-shadow: rgb(0, 0, 0) 0px 0px 20px;
+}
+
+header h1 {
+	/*Position*/
+	float:left;
+	display:block;
+	margin-top: 0px;
+	margin-left:3px;
+	/*Style*/
+	font:normal 40px Arial Black;
+}
+
+#header_image {
+	margin-right: 10px;
+	text-align: right;
+}
+
+#image {
+	height: 120px;
+}
+
+#banniere {
+	max-width: 100%;
+	
+}
+
+nav
+{
+	/*Position*/
+	text-align: center;
+	margin-top:6px;
+	/*Style*/
+	color: white;
+	font-family: Tahoma;
+	font-size: 25px;
+	background-color: rgb(30, 30, 30);
+	box-shadow: gray 0px 0px 20px;
+}
+
+nav > ul > li {
+	/*Position*/
+	display: inline-block;
+	position:relative;
+	margin:10px 5px;
+
+	/*Style*/
+	list-style:none;
+}
+
+nav > ul > li:not(:last-child) {
+	border-right: solid 1px white;
+}
+
+/*Ne pas accéder au sous-menu*/
+nav  ul > li  > a {
+	color:white;
+	padding-right: 20px;
+	font: normal 24px Tahoma;
+}
+
+nav ul a:hover {
+	color:#794C21;
+}
+
+nav li:hover .submenu {
+	/*Position*/
+	top: 100%;
+	left:0px;
+	position:absolute;
+	padding: 5px;
+	z-index: 1000;
+	/*Style*/
+	display:inline-block;
+	
+}
+
+.submenu {
+	display:none;
+	background: rgb(30, 30, 30);
+	width: 250px;
+
+}
+
+.submenu li {
+	/*Position*/
+	border-bottom: 1px solid gray;
+	padding: 10px 15px 15px 5px;
+	/*Style*/
+	text-align: left;
+	font-size: 14px;
+	color:white;
+}
+
+.submenu li:hover {
+	background-color: #654321;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+p {
+	margin: 15px;
+	font-family:bold 12px Tahoma;
+}
+
+
+h2 {
+	font-size: 22px;
+}
+
+
+/*Importation de la police font-squirrel*/
+@font-face
+{
+	font-family: Alex Brush;
+	src: url(AlexBrush-Regular.ttf);
+	font-weight: normal;
+}
+
+em 
+{
+	font-family: Alex Brush;
+}
+
+
+
+footer {
+	/*Position*/
+	position: relative;
+	bottom: 0px;
+	text-align: center;
+	height:50px;
+	padding-top: 50px;
+	margin-top:20px;
+	/*Style*/
+	font:normal 8px Tahoma;
+	border-top: solid 2px white;
+	color: white;
+	background-color: rgb(40, 40, 40);
+	text-shadow: rgb(0, 0, 0) 0px 0px 8px;
+}

@@ -1,0 +1,25 @@
+/*CSS pour la page des contacts*/
+
+form
+{
+	/*Position*/
+	margin:0px;
+	padding:10px;
+	/*Style*/
+	background-color:white;
+	font:bold 18px Tahoma;
+	text-align:center;
+}
+
+/*En-tête du formulaire*/
+#titre
+{
+	/*Position*/
+	margin-top:50px;
+	padding:5px;
+	/*Style*/
+	color:white;
+	font:bold 25px Tahoma;
+	text-align:center;
+	background-color:gray;
+}

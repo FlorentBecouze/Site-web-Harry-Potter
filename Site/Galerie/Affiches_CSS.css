@@ -1,0 +1,21 @@
+/*CSS appliqué aux affiches de films dans la galerie*/
+
+figure {
+	text-align:center;
+	margin-top:20px;
+}
+
+figcaption {
+	font-size:25px;
+	color:white;
+	margin-top:10px;
+}
+
+p {
+	/*Position*/
+	margin-top:40px;
+	/*Style*/
+	color:blue;
+	text-align:center;
+	text-decoration: underline;
+}
